@@ -1,11 +1,14 @@
 {
   "version": "1.0.0",
-  "name": "solarized-dark-syntax",
-  "description": "Solarlized Dark",
-  "version": "0.1.0",
+  "name": "gruvbox-dark-syntax",
+  "description": "Gruvbox Dark Syntax Theme",
   "theme": "syntax",
-  "styleSheets": ["solarized.less"],
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/tdudz/inkdrop-gruvbox-dark-syntax"
+  },
+  "styleSheets": ["gruvbox-dark.less"],
   "engines": {
-    "inkdrop": "^4.x"
+    "inkdrop": ">=4.3.0"
   }
 }

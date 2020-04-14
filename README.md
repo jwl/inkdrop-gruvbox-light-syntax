@@ -1,2 +1,16 @@
-# inkdrop-solarized-dark-syntax-theme
-Solarized dark syntax theme for Inkdrop Markdown Editor
+# inkdrop-solarized-dark-syntax
+gruvbox dark syntax theme for Inkdrop Markdown Editor
+
+Original gruvbox color scheme by Pavel Pertsev (https://github.com/morhetz/gruvbox)
+
+## Install
+`ipm install `
+
+## Screenshot
+
+## Notes
+The color codes used are faithful to the codes from the original scheme below:
+![gruvbox-dark](https://camo.githubusercontent.com/cdb2f2e986c564b515c0c698e6c45b4ab5d725a9/687474703a2f2f692e696d6775722e636f6d2f776136363678672e706e67)
+
+This theme is forked from the [Inkdrop Solarized Dark syntax theme](https://github.com/inkdropapp/inkdrop-solarized-dark-syntax-theme)
+
