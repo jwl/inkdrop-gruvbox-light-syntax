@@ -1,0 +1,175 @@
+/*
+Gruvbox dark theme for Inkdrop
+
+Original Gruvbox color scheme by Pavel Pertsev (https://github.com/morhetz/gruvbox)
+*/
+
+@import "./colors";
+
+.editor {
+
+  .CodeMirror {
+    color-profile: sRGB;
+    rendering-intent: auto;
+    color: @fg;
+    background-color: @bg;
+    text-shadow: @bg0 0 1px;
+
+    .cm-header { color: @fg; }
+    .cm-quote { color: @green; font-style: italic; }
+
+    .cm-keyword, .cm-formatting-list.cm-variable-2 { color: @red; }
+    .cm-atom, .cm-formatting-list.cm-variable-3 { color: @purple; }
+    .cm-number { color: @purple; }
+    .cm-def { color: @green; }
+
+    .cm-variable { color: @yellow; }
+    .cm-variable-2 { color: @fg; }
+    .cm-variable-3 { color: @purple; }
+
+    .cm-property { color: @blue; }
+    .cm-operator { color: @fg; }
+
+    .cm-comment { color: @gray; font-style:italic; }
+
+    .cm-string { color: @green; }
+    .cm-string-2 { color: @fg; }
+
+    .cm-meta { color: @green; }
+    .cm-qualifier { color: @fg; }
+    .cm-builtin { color: @purple; }
+    .cm-bracket { color: @aqua; }
+    .CodeMirror-matchingbracket {
+      color: @green !important;
+      background-color: @bg3;
+    }
+    .CodeMirror-nonmatchingbracket {
+      color: @purple !important;
+    }
+    .cm-tag { color: @bg3; }
+    .cm-attribute { color: @blue; }
+
+    .CodeMirror-widget {
+      text-shadow: none;
+    }
+
+    .cm-hr { color: @fg; }
+    .cm-link, .cm-url {
+      color: @aqua;
+      text-underline-position: under;
+    }
+    .cm-special { color: @purple; }
+    .cm-formatting-em {
+      opacity: 0.6;
+    }
+    .cm-em {
+      color: @green-light;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-position: under;
+    }
+    .cm-strong {
+      color: @orange;
+    }
+    .cm-error,
+    .cm-invalidchar {
+      color: @bg2;
+      border-bottom: 1px dotted @red;
+    }
+    .cm-whitespace::before {
+      color: @bg3;
+      opacity: 0.4;
+    }
+
+    // carriage return
+    .CodeMirror-code > div > pre > span::after, .CodeMirror-line > span::after {
+      color: @bg3;
+      opacity: 0.4;
+    }
+
+    .cm-inline-code {
+      background: rgba(255, 255, 255, 0.04);
+      color: @bg4;
+    }
+
+    .gfm-codeblock-bg.CodeMirror-linebackground {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .cm-table-sep, .table-row.table-row-1 {
+      color: @purple;
+    }
+  }
+
+  .CodeMirror div.CodeMirror-selected { background: @bg1; }
+  .CodeMirror.CodeMirror ::selection { background: rgba(7, 54, 66, 0.99); }
+  .CodeMirror .CodeMirror-line::-moz-selection,  .CodeMirror-line > span::-moz-selection,  .CodeMirror-line > span > span::-moz-selection { background: rgba(7, 54, 66, 0.99); }
+
+  /* Editor styling */
+
+  /* Little shadow on the view-port of the buffer view */
+  .CodeMirror {
+    -moz-box-shadow: inset 7px 0 12px -6px #000;
+    -webkit-box-shadow: inset 7px 0 12px -6px #000;
+    box-shadow: inset 7px 0 12px -6px #000;
+  }
+
+  /* Gutter border and some shadow from it  */
+  .CodeMirror .CodeMirror-gutters {
+    border-right: 1px solid;
+  }
+
+  /* Gutter colors and line number styling based of color scheme (dark / light) */
+
+  /* Dark */
+  .CodeMirror .CodeMirror-gutters {
+    background-color: @bg;
+    border-color: @bg1;
+  }
+
+  .CodeMirror .CodeMirror-linenumber {
+    text-shadow: #021014 0 -1px;
+  }
+
+  /* Common */
+  .CodeMirror .CodeMirror-linenumber {
+    color: @gray;
+    padding: 0 5px;
+  }
+  .CodeMirror .CodeMirror-guttermarker-subtle { color: @bg2; }
+  .CodeMirror .CodeMirror-guttermarker { color: @bg2; }
+
+  .CodeMirror .CodeMirror-gutter .CodeMirror-gutter-text {
+    color: @bg2;
+  }
+
+  .CodeMirror .CodeMirror-cursor { border-left: 1px solid #819090; }
+
+  /*
+  Active line. Negative margin compensates left padding of the text in the
+  view-port
+  */
+  .CodeMirror .CodeMirror-activeline-background, .CodeMirror .CodeMirror-activeline-gutter {
+    background: @bg1 !important;
+  }
+  .CodeMirror-activeline .CodeMirror-linenumber {
+    color: @yellow;
+  }
+
+  .cm-formatting-header {
+    opacity: 0.3;
+  }
+
+  .cm-searching {
+    // Ctrl + F results
+    border: 1px solid @orange;
+    padding: 2px;
+    color: white !important;
+    background: transparent;
+  }
+
+  .CodeMirror .CodeMirror-linewidget img.inline-widget {
+    background: rgba(255,255,255,0.05);
+  }
+
+}
