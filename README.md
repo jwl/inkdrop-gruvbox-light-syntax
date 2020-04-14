@@ -1,4 +1,4 @@
-# inkdrop-solarized-dark-syntax
+# inkdrop-gruvbox-dark-syntax
 gruvbox dark syntax theme for Inkdrop Markdown Editor
 
 Original gruvbox color scheme by Pavel Pertsev (https://github.com/morhetz/gruvbox)
