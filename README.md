@@ -4,7 +4,7 @@ gruvbox dark syntax theme for Inkdrop Markdown Editor
 Original gruvbox color scheme by Pavel Pertsev (https://github.com/morhetz/gruvbox)
 
 ## Install
-`ipm install `
+`ipm install gruvbox-dark-syntax`
 
 ## Screenshot
 
