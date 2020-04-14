@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "name": "gruvbox-dark-syntax",
-  "description": "Gruvbox Dark Syntax Theme",
+  "description": "gruvbox dark syntax theme",
   "theme": "syntax",
   "repository": {
     "type": "git",
