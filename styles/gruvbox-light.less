@@ -1,5 +1,5 @@
 /*
-Gruvbox dark theme for Inkdrop
+Gruvbox light theme for Inkdrop
 
 Original Gruvbox color scheme by Pavel Pertsev (https://github.com/morhetz/gruvbox)
 */
@@ -13,7 +13,7 @@ Original Gruvbox color scheme by Pavel Pertsev (https://github.com/morhetz/gruvb
     rendering-intent: auto;
     color: @fg;
     background-color: @bg;
-    text-shadow: @bg1 0 1px;
+    // text-shadow: @bg1 0 1px;
 
     .cm-header { color: @fg; }
     .cm-quote { color: @green; font-style: italic; }
@@ -63,7 +63,7 @@ Original Gruvbox color scheme by Pavel Pertsev (https://github.com/morhetz/gruvb
       opacity: 0.6;
     }
     .cm-em {
-      color: @green-light;
+      color: @green-dark;
       text-decoration: underline;
       text-decoration-style: dotted;
       text-underline-position: under;
@@ -128,7 +128,7 @@ Original Gruvbox color scheme by Pavel Pertsev (https://github.com/morhetz/gruvb
   }
 
   .CodeMirror .CodeMirror-linenumber {
-    text-shadow: #021014 0 -1px;
+    text-shadow: @gray-dark 0 1px;
   }
 
   /* Common */
@@ -153,7 +153,7 @@ Original Gruvbox color scheme by Pavel Pertsev (https://github.com/morhetz/gruvb
     background: @bg1 !important;
   }
   .CodeMirror-activeline .CodeMirror-linenumber {
-    color: @yellow;
+    color: @yellow-dark;
   }
 
   .cm-formatting-header {
@@ -164,7 +164,7 @@ Original Gruvbox color scheme by Pavel Pertsev (https://github.com/morhetz/gruvb
     // Ctrl + F results
     border: 1px solid @orange;
     padding: 2px;
-    color: white !important;
+    color: @fg0 !important;
     background: transparent;
   }
 

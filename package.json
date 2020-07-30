@@ -1,14 +1,14 @@
 {
-  "version": "1.0.2",
-  "name": "gruvbox-dark-syntax",
-  "description": "gruvbox dark syntax theme",
+  "version": "1.0.1",
+  "name": "gruvbox-light-syntax",
+  "description": "gruvbox light syntax theme",
   "theme": "syntax",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tdudz/inkdrop-gruvbox-dark-syntax"
+    "url": "https://github.com/jwl/inkdrop-gruvbox-light-syntax"
   },
   "styleSheets": [
-    "gruvbox-dark.less"
+    "gruvbox-light.less"
   ],
   "engines": {
     "inkdrop": ">=4.3.0"
